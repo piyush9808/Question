@@ -1,14 +1,15 @@
 import Link from "next/link"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Image from "next/image"
+import { UserButton } from "@clerk/nextjs"
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-black  text-white">
 
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-white ">
+      <header className="lg:px-6 h-14 flex items-center border-b border-white ">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <Image  src={"/logo.svg"} width={100} height={100} alt="logo-svg"/>
+          <Image src={"/logo.png"} width={200} height={200} alt="logo-svg" />
           <span className="sr-only">AI Interview Generator</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -24,6 +25,9 @@ export default function Component() {
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Contact
           </Link>
+          <div className="border border-white rounded-full bg-white flex items-center justify-center">
+            <UserButton />
+          </div>
         </nav>
       </header>
 
@@ -35,10 +39,12 @@ export default function Component() {
         <section className="w-full py-12 sm:py-16 md:py-24 lg:py-32">
 
           <div className="container px-4 md:px-6">
+
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-              <div className="flex flex-col justify-center space-y-4">
+
+              <div className="flex flex-col justify-center items-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none">
+                  <h1 className="text-3xl font-bold tracking-tighter flex justify-center items-center w-full sm:text-4xl md:text-5xl xl:text-6xl/none">
                     Ace Your Next Interview with AI
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -63,19 +69,20 @@ export default function Component() {
                   </Link>
                 </div>
               </div>
-              <img
+
+              {/* <img
                 src="/placeholder.svg"
                 width="550"
                 height="550"
                 alt="Hero"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-              />
+              /> */}
             </div>
           </div>
 
         </section>
 
-        
+
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 text-black bg-muted">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -179,13 +186,13 @@ export default function Component() {
                   </blockquote>
                 </div>
               </div>
-              <img
+              {/* <img
                 src="/placeholder.svg"
                 width="550"
                 height="310"
                 alt="Testimonials"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
             </div>
           </div>
         </section>

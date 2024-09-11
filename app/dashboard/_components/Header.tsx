@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image'
 import React, { useEffect } from 'react'
-import logo from '@/public/logo.svg'
+import logo from '@/public/logo.png'
 import { UserButton } from '@clerk/nextjs'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
