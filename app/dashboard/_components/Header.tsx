@@ -14,8 +14,8 @@ function Header() {
   })
 
   return (
-    <div className='flex p-4 items-center justify-between bg-slate-200 shadow-md'>
-      <Link href="/dashboard">
+    <div className='flex p-4 items-center bg-black text-white justify-between  shadow-md'>
+      <Link href="/">
         <Image src={logo} alt="Logo"></Image>
       </Link>
       <ul className='hidden md:flex gap-6'>

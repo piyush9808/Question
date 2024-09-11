@@ -1,12 +1,18 @@
+import FlickeringGrid from '@/components/magicui/flickering-grid'
 import Ripple from '@/components/magicui/ripple'
 import { SignIn } from '@clerk/nextjs'
 
 export default function Page() {
   return (
-  <div className="flex justify-center bg-white h-screen  items-center flex-col">
-    <SignIn />
-    <Ripple/>
-  </div>
+    <>
+      {/* <FlickeringGrid
+
+      /> */}
+      
+        <div className=' flex justify-center h-full w-full mt-20 items-center'>
+          <SignIn />
+        </div>
+    </>
   )
 
 }
