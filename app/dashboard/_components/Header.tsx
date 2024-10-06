@@ -16,7 +16,7 @@ function Header() {
   return (
     <div className='flex p-4 items-center bg-black text-white justify-between  shadow-md'>
       <Link href="/">
-        <Image src={logo} alt="Logo"></Image>
+        <Image src={logo} alt="Logo"  width={200} height={200}></Image>
       </Link>
       <ul className='hidden md:flex gap-6'>
         <li className={`cursor-pointer ${path == "/dashboard" && 'text-slate-800 font-bold'}`}>Dashboard</li>

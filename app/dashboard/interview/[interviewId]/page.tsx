@@ -42,7 +42,7 @@ function Interview({ params }: InterviewProps) {
     }, [interviewData]);
 
     return (
-        <div className='my-10 flex flex-col  justify-center items-center'>
+        <div className='my-10 flex flex-col  justify-center items-center text-white'>
             <h2 className='font-bold text-2xl '>Get Started</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
