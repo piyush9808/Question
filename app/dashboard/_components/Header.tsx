@@ -14,7 +14,7 @@ function Header() {
   })
 
   return (
-    <div className='flex p-4 items-center bg-black text-white justify-between  shadow-md'>
+    <div className='flex p-4 items-center bg-white text-black justify-between  shadow-md'>
       <Link href="/">
         <Image src={logo} alt="Logo"  width={200} height={200}></Image>
       </Link>

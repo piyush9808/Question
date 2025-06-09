@@ -5,7 +5,7 @@ import { UserButton } from "@clerk/nextjs"
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-black  text-white">
+    <div className="flex flex-col min-h-[100dvh] bg-white  text-black">
 
       <header className="lg:px-6 h-fit py-2 flex items-center border-b border-white ">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
@@ -145,7 +145,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 text-black bg-black  py-1 text-sm">Testimonials</div>
+                <div className="inline-block rounded-lg bg-muted px-3 text-black bg-white  py-1 text-sm">Testimonials</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Users Say</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Hear from real people who have used our AI-powered mock interview generator to land their dream jobs.
@@ -166,7 +166,7 @@ export default function Component() {
                     </div>
                   </div>
                   <blockquote className="text-muted-foreground">
-                    The AI-powered mock interviews were a game-changer for me.\n They helped me identify and improve on
+                    The AI-powered mock interviews were a game-changer for me. They helped me identify and improve on
                     my weaknesses, and\n ultimately land my dream job at a top tech company.
                   </blockquote>
                 </div>

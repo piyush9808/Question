@@ -106,7 +106,7 @@ function RecordAnsSection({ mockInterviewQuestion, activeQuestionIndex, intervie
     return (
         <div className='flex items-center justify-center flex-col'>
 
-            <div className='flex flex-col justify-center items-center bg-black rounded-lg p-5  mt-20 my-20'>
+            <div className='flex flex-col justify-center items-center bg-white rounded-lg p-5  mt-20 my-20'>
                 <Image src={'/webcam.png'} width={200} height={200} alt="webcam"
                     className="absolute" />
                 <Webcam
