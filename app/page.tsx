@@ -167,7 +167,7 @@ export default function Component() {
                   </div>
                   <blockquote className="text-muted-foreground">
                     The AI-powered mock interviews were a game-changer for me. They helped me identify and improve on
-                    my weaknesses, and\n ultimately land my dream job at a top tech company.
+                    my weaknesses, and  ultimately land my dream job at a top tech company.
                   </blockquote>
                 </div>
                 <div className="grid gap-4 rounded-lg border bg-background p-6">
@@ -182,8 +182,8 @@ export default function Component() {
                     </div>
                   </div>
                   <blockquote className="text-muted-foreground">
-                    I was really nervous about my upcoming interview, but the\n AI-powered mock interviews helped me
-                    feel confident and\n prepared. I aced the real interview and got the job!
+                    I was really nervous about my upcoming interview, but the  AI-powered mock interviews helped me
+                    feel confident and  prepared. I aced the real interview and got the job!
                   </blockquote>
                 </div>
               </div>
