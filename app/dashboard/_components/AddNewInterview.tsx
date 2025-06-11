@@ -29,13 +29,14 @@ function AddNewInterview() {
     const { user } = useUser();
     const { v4: uuidv4 } = require('uuid');
     const router=useRouter();
+    const [interviewQuestions, setinterviewQuestions] = useState('')
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         setloading(true)
         e.preventDefault();
         console.log(jobPosition, jobExperience, jobDescription)
 
-        const InputPrompt = "Job position:" + jobPosition + ",Job Description:" + jobDescription + ",Years of Experience:" + jobExperience + ",Please give " + process.env.NEXT_PUBLIC_INTERVIEW_COUNT + " interview questions alongwith their answers, the question with its answer in JSON format,the response should only have question with their answer in json"
+        const InputPrompt = "Job position:" + jobPosition + ",Job Description:" + jobDescription + ",Years of Experience:" + jobExperience + ",Please give " + interviewQuestions + " interview questions alongwith their answers, the question with its answer in JSON format,the response should only have question with their answer in json"
 
 
         const result = await chatSession.sendMessage(InputPrompt);
@@ -111,8 +112,17 @@ function AddNewInterview() {
                                         <label className='text-bold'>
                                             Years of Experience
                                         </label>
-                                        <Input placeholder='1-5' type='number' max="50" required
+                                        <Input placeholder='1-5' type='number' max="30" required
                                             onChange={(event) => setjobExperience(event.target.value)}
+                                        >
+                                        </Input>
+                                    </div>
+                                    <div className='mt-3 my-4'>
+                                        <label className='text-bold'>
+                                            No of Questions
+                                        </label>
+                                        <Input placeholder='1-10' type='number' max="100" required
+                                            onChange={(event) => setinterviewQuestions(event.target.value)}
                                         >
                                         </Input>
                                     </div>
